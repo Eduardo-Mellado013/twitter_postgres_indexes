@@ -1,0 +1,13 @@
+nohup: ignoring input
+ ______________________________________
+/ You have an unusual understanding of \
+\ the problems of human relationships. /
+ --------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+time="2025-05-06T19:30:45-07:00" level=warning msg="/home/Eduardo.MelladoJacinto.25b/twitter_postgres_indexes/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ERROR:  duplicate key value violates unique constraint "pg_class_relname_nsp_index"
+DETAIL:  Key (relname, relnamespace)=(idx_tweets_jsonb_text_ft, 2200) already exists.

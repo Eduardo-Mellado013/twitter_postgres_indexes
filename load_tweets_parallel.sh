@@ -23,7 +23,10 @@ echo '==========================================================================
 # Since pg_normalized_batch is faster,
 # we will use that code to load the data.
 
+time parallel -j 10 ./load_denormalized.sh {} ::: $files
+
 echo '================================================================================'
 echo 'load pg_normalized_batch'
 echo '================================================================================'
 # FIXME: copy your solution to the previous problem here
+time parallel -j 10 ./load_normalized_batch.sh {} ::: $files 
